@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pfeifer Sons Construction Mail Service - Secure and reliable mail management for construction professionals.">
+    <meta name="theme-color" content="#4FD1C5">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="Pfeifer Sons Construction, mail service, construction mail, secure mail, mailbox access">
+    <meta name="author" content="Pfeifer Sons Construction">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Pfeifer Sons Construction Mail Service">
+    <meta property="og:description" content="Secure and reliable mail management service for Pfeifer Sons Construction.">
+    <meta property="og:image" content="/logo.jpg">
+    <meta property="og:url" content="https://pfeifersonsmail.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pfeifer Sons Construction Mail Service">
+    <meta name="twitter:description" content="Secure and reliable mail management service for Pfeifer Sons Construction.">
+    <meta name="twitter:image" content="/logo.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="logo.jpg">
+    <link rel="apple-touch-icon" href="logo.jpg">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" as="style">
+    <link rel="preload" as="image" href="/images/hawaii-bg.webp">
+    
+    <title>Pfeifer Sons Construction Mail Service</title>
+    
+    <!-- Critical CSS inline for faster paint -->
+    <style>
+        :root {
+            --primary: #4FD1C5;
+            --text: #2D3748;
+            --background: #F7FAFC;
+            --card-bg: rgba(255, 255, 255, 0.9);
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+            background: 
+                linear-gradient(
+                    rgba(0, 0, 0, 0.4),
+                    rgba(0, 0, 0, 0.4)
+                ),
+                url('bg.jpg') center/cover no-repeat fixed;
+            background-attachment: scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            display: grid;
+            place-items: center;
+            padding: 1rem;
+        }
+
+        .container {
+            width: min(100%, 26rem);
+            animation: fadeIn 0.6s ease-out;
+            padding: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            border-radius: 16px;
+            display: block;
+            object-fit: contain;
+        }
+
+        .dev-notice {
+            background-color: #EFF6FF;
+            color: #1E40AF;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            border: 1px solid #BFDBFE;
+        }
+
+        .redirect-notice {
+            background-color: #FEF3C7;
+            color: #92400E;
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            border: 1px solid #FCD34D;
+        }
+
+        .title-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .title-main {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #1F2937;
+            letter-spacing: -0.5px;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .title-sub {
+            font-size: 1.25rem;
+            color: #4B5563;
+            letter-spacing: -0.5px;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            background: #F3F4F6;
+            color: #1F2937;
+            padding: 1.25rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            -webkit-tap-highlight-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .button:hover {
+            background: #E5E7EB;
+        }
+
+        .button span {
+            font-size: 1.5rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .button, .container {
+                animation: none;
+                transition: none;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            color: #6B7280;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .footer a {
+            color: #4B5563;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .footer a:hover {
+            color: #1F2937;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="dev-notice">
+            This system is still in development - please report any issues
+        </div>
+        <div class="redirect-notice">
+            Redirecting in <span id="countdown">20</span> seconds...
+        </div>
+        <div class="card">
+            <img src="logo.png" alt="Pfeifer Sons Construction Mail Service Logo" class="logo">
+            <div class="title-container">
+                <div class="title-main">Pfeifer Sons Construction</div>
+                <div class="title-sub">Mail Services</div>
+            </div>
+            <div class="button-group">
+                <a href="https://id.pfeifersc.com/home/zohodirectory/0oa4xklid15mWJHW75d7/aln1ge0sxbvVfoT5W1d8" class="button" target="_blank">
+                    <span>📬</span>
+                    Access Mailbox
+                </a>
+            </div>
+        </div>
+        <footer class="footer">
+            <div>© <span id="year"></span> Pfeifer Sons Construction. All rights reserved.</div>
+            <div><a href="tos.html">Terms of Service</a> | Powered by <a href="https://knovon.org" target="_blank" rel="noopener">Knovon</a></div>
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Countdown and redirect
+        let timeLeft = 20;
+        const countdownElement = document.getElementById('countdown');
+        
+        const countdownInterval = setInterval(function() {
+            timeLeft--;
+            countdownElement.textContent = timeLeft;
+            
+            if (timeLeft <= 0) {
+                clearInterval(countdownInterval);
+                window.location.href = "https://id.pfeifersc.com/home/zohodirectory/0oa4xklid15mWJHW75d7/aln1ge0sxbvVfoT5W1d8";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
